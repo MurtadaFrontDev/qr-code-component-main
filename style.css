@@ -1,0 +1,132 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: rgb(31, 50, 81);
+  --font-wg700: 700;
+  --font-wg400: 400;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+}
+p {
+  font-size: 15px;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  background-color: var(--Light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Start Card */
+.card {
+  max-width: 300px;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 0px 22px 26px -7px rgb(31 50 255 / 26%);
+  -webkit-box-shadow: 0px 22px 26px -7px rgb(31 50 255 / 26%);
+  -moz-box-shadow: 0px 22px 26px -7px rgb(31 50 255 / 26%);
+}
+.card .container {
+  padding: 1rem;
+}
+.card .container .card-img img {
+  border-radius: 10px;
+}
+.card .container .card--title {
+  margin: 1rem 0;
+}
+.card .container .card--title h1 {
+  font-size: 23px;
+  font-weight: var(--font-wg700);
+  color: var(--Dark-blue);
+  line-height: 27px;
+}
+.card .container .card--sub {
+  margin-bottom: 1rem;
+}
+.card .container .card--sub p {
+  font-size: 16px;
+  color: var(--Grayish-blue);
+  font-weight: var(--font-wg400);
+}
+/* End Card */
